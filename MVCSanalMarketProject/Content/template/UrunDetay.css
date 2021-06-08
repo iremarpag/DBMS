@@ -1,0 +1,80 @@
+﻿#UrunDetayi {
+    width: 650px;
+}
+
+#UrunDetaySol {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+    #UrunDetaySol img {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+    }
+
+#UrunDetaySag {
+    width: 330px;
+    height: 300px;
+    float: left;
+}
+
+.satir {
+    width: 330px;
+    border-bottom:1px solid #e1e1e1;
+    padding:5px 0;
+    font-size:14px;
+    margin-top:10px;
+}
+
+    .satir:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+.satir {
+    display: inline-block;
+}
+/*IE-mac de bu bolumu sakla  */
+* html .satir {
+    height: 1%;
+}
+
+.satir {
+    display: block;
+}
+/* IE-mac bu bolumu saklam artik */
+
+    .satir div {
+        float: left;
+    }
+
+        .satir div.col1 {
+            width:100px;
+        }
+
+        .satir div.col2 {
+            width: 30px;
+        }
+
+        .satir div.col3 {
+            width:200px;
+        }
+
+        .satir div.col4 {
+            width:330px;
+        }
+
+
+.btn {
+    padding:5px 10px;
+    background-color:#009cd7;
+    color:#ffffff;
+    border:1px solid #e1e1e1;
+}

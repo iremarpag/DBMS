@@ -1,0 +1,92 @@
+﻿/* Açılır Panel CSS */
+.Yukari {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #333;
+    width: 0px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+.Panel {
+    width: 320px;
+    height: 190px;
+    display: none;
+    position: absolute;
+    z-index:999;
+}
+
+.PanelContent {
+    width: 320px;
+    height: 170px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 0 2px black;
+    -moz-box-shadow: 1px 0 2px black;
+    box-shadow: 1px 0 2px black;
+    position: absolute;
+    background-color: #FFF;
+    font-size: 7pt;
+}
+
+.PanelHeader {
+    width: 320px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #333;
+    color: #FFF;
+    font-size: 8pt;
+    font-weight: bold;
+    padding-left: 15px;
+    color: #FFF;
+}
+
+    .PanelHeader span {
+        font-size: 7pt;
+        margin-left: 70px;
+        color: orange;
+    }
+
+.PanelIcerik {
+    width: 320px;
+    height: 170px;
+}
+/* Sepet CSS */
+#PanelUrunListesi {
+    width: 313px;
+    height: 140px;
+    margin: 5px 5px 5px 5px;
+    overflow-y: scroll;
+}
+
+#PanelUrunBaslik {
+    border-bottom: 1px solid #333;
+    height: 18px;
+}
+
+    #PanelUrunBaslik div {
+        font-size: 9pt;
+        font-weight: bold;
+        float: left;
+        width: 72px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+    }
+
+.PanelUrun {
+    border-bottom: 1px solid #CCC;
+    height: 18px;
+}
+
+    .PanelUrun div {
+        color: #666;
+        font-weight: bold;
+        float: left;
+        width: 72px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+    }
