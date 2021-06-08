@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>.Net Market</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+
+    <div id="Container">
+        <div id="Header">
+            <div id="HeaderTop">
+                <div id="Logo">
+                    <img src="~/Content/template/images/SanalMarketLogo.png" />
+                </div>
+            </div>
+            <div id="HeaderBottom">
+                <ul id="AcilirMenu">
+                    <li class="acilir1">
+                        <img src="~/Content/template/images/cart.png" />
+                        <a id="lnkSepet" href="#">Sepet</a>
+                        <div id="Panel1" class="Panel">
+                            <div class="Yukari"></div>
+                            <div class="PanelContent">
+                                <div class="PanelHeader">Sepet <span>Sepette ürün bulunmamaktadır.</span></div>
+                                <div id="PanelIcerik">
+                                    <!-- Doldurulacak Alan -->
+                                    <div id="PanelUrunListesi">
+                                        <div id="PanelUrunBaslik">
+                                            <div>Ürün Adı</div>
+                                            <div>Fiyat</div>
+                                            <div>xAdet</div>
+                                            <div>İşlem</div>
+                                        </div>
+                                        <div class="PanelUrun">
+                                            <div>Samsung S3</div>
+                                            <div>200 TL</div>
+                                            <div>3</div>
+                                            <div>
+                                                <a href="#">+</a>
+                                                <a href="#">-</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Doldurulacak Alan Bitiş -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="~/Content/template/images/user.png" />
+                        Kullanıcı Girişi
+                    </li>
+                    <li>
+                        <input type="text" name="txtKullaniciAdi" id="txtSearch" value="Aranacak Kelime" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Showcase">
+            <div class="ShowItem">
+                <div class="ItemImage">
+                    <img src="~/Content/images/showcase/img1.png" />
+                </div>
+                <div class="ItemTitle">Hayatına Eşlik Eder</div>
+                <div class="ItemText">Samsung Galaxy S4 ile hayallerine bir adım at..</div>
+            </div>
+            <div class="ShowItem">
+                <div class="ItemImage">
+                    <img src="~/Content/images/showcase/img2.png" />
+                </div>
+                <div class="ItemTitle">IPad New Generetion</div>
+                <div class="ItemText">Daha büyük ekran, daha fazla imkan Yeni Nesil Ipad'de</div>
+            </div>
+            <div class="ShowItem">
+                <div class="ItemImage">
+                    <img src="~/Content/images/showcase/img3.png" />
+                </div>
+                <div class="ItemTitle">Resimlerini Konuştur</div>
+                <div class="ItemText">Hiç kimse sizin gibi görünmüyor.. Canon EOS T41</div>
+            </div>
+        </div>
+        <div id="Nav">
+            <div id="NavTop">
+                <ul>
+                    <li>
+                        <img src="~/Content/template/images/computer.png" />
+                        Masaüstü Bilgisayarlar
+                    </li>
+                    <li>
+                        <img src="~/Content/template/images/laptop.png" />
+                        Dizüstü Bilgisayarlar
+                    </li>
+                    <li>
+                        <img src="~/Content/template/images/tablet.png" />
+                        Tablet Bilgisayarlar
+                    </li>
+                    <li>
+                        <img src="~/Content/template/images/other.png" />
+                        Diğer Ürünler
+                    </li>
+                </ul>
+            </div>
+            <div id="NavBottom"></div>
+        </div>
+        <div id="Content">
+            <div id="ContentLeft">
+                <h2>Kategoriler</h2>
+                <ul>
+                    <li><a href="#">Bilgisayarlar</a></li>
+                    <li><a href="#">Mobil Cihazlar</a></li>
+                    <li><a href="#">Dizüstü Bilgisayarlar</a></li>
+                    <li><a href="#">Diğer Ürünler</a></li>
+                </ul>
+            </div>
+            @RenderBody()
+        </div>
+        <div style="clear: both;"></div>
+        <div id="Footer">
+            Copyright 2015 | NetMarket.com Her Hakkı Saklıdır
+        </div>
+    </div>
+    
+
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
